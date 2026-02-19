@@ -25,16 +25,6 @@ h1 {
     Intro
    ================= */
 
-/* 
-  Challenge: Style the .intro section
-    - Convert into a flex container; 
-    - display its content in a column
-    - Set a minimum height of 250px
-    - Center-align its content
-    - Vertically center the content
-    - Remove the space around the edges of the page
-*/
-
 .intro {
 	display: flex;
 	flex-direction: column;
@@ -48,6 +38,32 @@ h1 {
 /* ====================
     Main content
    ==================== */
+
+/* 
+  Challenge: Style the main content
+    - Use flexbox to horizontally center all items inside 
+      .main-content. The <p> text should remain left-aligned.
+    - Use em to give .main-content a top padding equal to 40px
+      and a left and right padding equal to 32px.
+    - Set the width of .img-main to 120px and display it as a rounded image.
+*/
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2.5em 2em 0 2em;
+}
+
+.main-content p {
+	align-self: start;
+}
+
+.img-main {
+	width: 120px;
+	border-radius: 50%;
+}
 
 /* =================
     Form
