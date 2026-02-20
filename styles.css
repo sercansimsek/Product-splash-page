@@ -1,35 +1,35 @@
 body {
-	font-family: "Source Sans Pro", sans-serif;
-	color: #404040;
-	margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #404040;
+  margin: 0;
 }
 
 h1 {
-	font-size: 2.5rem;
-	font-weight: 400;
-	text-shadow: 0 2px #816fca;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 0 2px #816fca;
 }
 
 h2 {
-	font-size: 2.25rem;
-	margin: 0.166em 0;
+  font-size: 2.25rem;
+  margin: 0.166em 0;
 }
 
 p {
-	font-size: 1.125rem;
-	line-height: 1.35;
+  font-size: 1.125rem;
+  line-height: 1.35;
 }
 
 .beta-text {
-	text-transform: uppercase;
-	font-weight: 900;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 .subheading {
-	color: #575757;
-	font-weight: 900;
-	margin-bottom: 0.5em;
-	text-transform: uppercase;
+  color: #575757;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
 }
 
 /* =================
@@ -38,10 +38,10 @@ p {
 
 .intro,
 .main-content {
-	display: flex;
-	flex-direction: column;
-	padding-left: 2em;
-	padding-right: 2em;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 /* =================
@@ -49,14 +49,14 @@ p {
    ================= */
 
 .intro {
-	justify-content: center;
-	min-height: 250px;
-	text-align: center;
-	color: #fff;
-	background-color: #9480e4;
+  justify-content: center;
+  min-height: 250px;
+  text-align: center;
+  color: #fff;
+  background-color: #9480e4;
 
-	background-image: url("/images/intro-bg.png");
-	background-size: cover;
+  background-image: url("/images/intro-bg.png");
+  background-size: cover;
 }
 
 /* ====================
@@ -64,64 +64,89 @@ p {
    ==================== */
 
 .main-content {
-	align-items: center;
-	padding-top: 2.5em;
+  align-items: center;
+  padding-top: 2.5em;
 }
 
 .img-main {
-	width: 120px;
-	border-radius: 50%;
+  width: 120px;
+  border-radius: 50%;
 }
 
 /* =================
     Form
    ================= */
+input,
+button {
+  font-family: inherit;
+  width: 100%;
+  border-radius: 5px;
+}
+
 input {
-    font-family: inherit;
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 0.75em;
-    border: 2px solid #d1d5db;
-    border-radius: 5px;
+  padding: 0.5em;
+  margin-bottom: 0.75em;
+  border: 2px solid #d1d5db;
 }
 
 input:focus {
-    outline: none;
-    border-color: #8a71ec;
-    background-color: #e6e8ec;
+  outline: none;
+  border-color: #8a71ec;
+  background-color: #e6e8ec;
 }
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: 1em 0;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #8a71ec;
+  margin-top: 1em;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #b7a7f6;
+}
+
 /* =================
     Media queries 
    ================= */
 
 @media (min-width: 576px) {
-	body {
-		display: flex;
-	}
+  body {
+    display: flex;
+  }
 
-	.intro,
-	.main-content {
-		width: 50%;
-	}
+  .intro,
+  .main-content {
+    width: 50%;
+  }
 
-	.intro {
-		min-height: 100vh;
-	}
+  .intro {
+    min-height: 100vh;
+  }
 
-	.main-content {
-		justify-content: center;
-		padding-top: 0;
-	}
+  .main-content {
+    justify-content: center;
+    padding-top: 0;
+  }
 
-	h1 {
-		font-size: 5vw;
-	}
+  h1 {
+    font-size: 5vw;
+  }
 
-	h2 {
-		font-size: 2.625rem;
-	}
+  h2 {
+    font-size: 2.625rem;
+  }
 
-	.beta-text {
-		font-size: 1.25rem;
-	}
+  .beta-text {
+    font-size: 1.25rem;
+  }
 }
