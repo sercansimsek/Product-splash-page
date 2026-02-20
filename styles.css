@@ -54,6 +54,9 @@ p {
 	text-align: center;
 	color: #fff;
 	background-color: #9480e4;
+
+	background-image: url('/images/intro-bg.png');
+	background-size: cover;
 }
 
 /* ====================
@@ -73,7 +76,11 @@ p {
 /* =================
     Form
    ================= */
-
+input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0.75em;
+}
 /* =================
     Media queries 
    ================= */
