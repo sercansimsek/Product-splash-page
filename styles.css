@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+/* =================
+    Typography 
+   ================= */
+
 h1 {
   font-size: 2.5rem;
   font-weight: 400;
@@ -12,7 +16,7 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
-  margin: 0.166em 0;
+  margin: 0.167em 0;
 }
 
 p {
@@ -21,7 +25,6 @@ p {
 }
 
 .beta-text {
-  text-transform: uppercase;
   font-weight: 900;
 }
 
@@ -29,7 +32,37 @@ p {
   color: #575757;
   font-weight: 900;
   margin-bottom: 0.5em;
+}
+
+.beta-text,
+.top-text,
+.subheading {
   text-transform: uppercase;
+}
+
+/* 
+  Challenge: 
+    Adjust the visual order of .top-text and re-distribute
+    the space inside .intro: 
+      - Display .top-text above the h1 and align it to 
+        the top edge of the .intro section
+      - Evenly distribute the content inside .intro
+      - The top border of .top-text should match the width of the text
+*/
+
+.top-text {
+  font-size: 0.875rem;
+  font-weight: 900;
+  padding-top: 0.25em;
+  border-top: 5px solid;
+  order: -1;
+  margin: 0 auto;
+}
+
+.fine-print {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #858585;
 }
 
 /* =================
@@ -49,14 +82,13 @@ p {
    ================= */
 
 .intro {
-  justify-content: center;
+  justify-content: space-between;
   min-height: 250px;
   text-align: center;
   color: #fff;
-  background-color: #9480e4;
-
-  background-image: url("/images/intro-bg.png");
+  background: #9480e4 url("images/intro-bg.png");
   background-size: cover;
+  padding-bottom: 1.5em;
 }
 
 /* ====================
@@ -76,6 +108,7 @@ p {
 /* =================
     Form
    ================= */
+
 input,
 button {
   font-family: inherit;
@@ -124,6 +157,18 @@ input:focus {
     display: flex;
   }
 
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 2.625rem;
+  }
+
+  .beta-text {
+    font-size: 1.25rem;
+  }
+
   .intro,
   .main-content {
     width: 50%;
@@ -136,17 +181,5 @@ input:focus {
   .main-content {
     justify-content: center;
     padding-top: 0;
-  }
-
-  h1 {
-    font-size: 5vw;
-  }
-
-  h2 {
-    font-size: 2.625rem;
-  }
-
-  .beta-text {
-    font-size: 1.25rem;
   }
 }
