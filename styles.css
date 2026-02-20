@@ -4,21 +4,42 @@ body {
 	margin: 0;
 }
 
-/* =================
-    Typography 
-   ================= */
-
 h1 {
+	font-size: 2.5rem;
 	font-weight: 400;
+	text-shadow: 0 2px #816fca;
+}
+
+h2 {
+	font-size: 2.25rem;
+	margin: 0.166em 0;
+}
+
+p {
+	font-size: 1.125rem;
+	line-height: 1.35;
 }
 
 .beta-text {
+	text-transform: uppercase;
 	font-weight: 900;
 }
 
 .subheading {
 	color: #575757;
 	font-weight: 900;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+}
+
+/* =================
+    Flex containers
+   ================= */
+
+.intro,
+.main-content {
+	display: flex;
+	flex-direction: column;
 }
 
 /* =================
@@ -26,11 +47,9 @@ h1 {
    ================= */
 
 .intro {
-	display: flex;
-	flex-direction: column;
-	min-height: 250px;
-	align-items: center;
 	justify-content: center;
+	min-height: 250px;
+	text-align: center;
 	color: #fff;
 	background-color: #9480e4;
 }
@@ -39,25 +58,11 @@ h1 {
     Main content
    ==================== */
 
-/* 
-  Challenge: Style the main content
-    - Use flexbox to horizontally center all items inside 
-      .main-content. The <p> text should remain left-aligned.
-    - Use em to give .main-content a top padding equal to 40px
-      and a left and right padding equal to 32px.
-    - Set the width of .img-main to 120px and display it as a rounded image.
-*/
-
 .main-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	padding: 2.5em 2em 0 2em;
-}
-
-.main-content p {
-	align-self: start;
+	padding-top: 2.5em;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 .img-main {
